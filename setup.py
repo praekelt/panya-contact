@@ -8,5 +8,8 @@ setup(
     author_email='dev@praekelt.com',
     url='https://github.com/praekelt/django-contact',
     packages = find_packages(),
+    install_requires = [
+        'django-honeypot',
+    ],
     include_package_data=True,
 )
