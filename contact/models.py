@@ -37,7 +37,7 @@ class ContactOptions(Options):
         User,
         blank=True,
         null=True,
-        help_text='Select users who will recieve emails sent via the genral contact form.'
+        help_text='Select users who will recieve emails sent via the general contact form.'
     )
     
     
