@@ -8,6 +8,7 @@
 		<div class="generic">
             <h2>Please use the form below to send us a message.</h2>
             <form id="frmStationContact" method="post" class="cmxform">
+				{% csrf_token %}
                 {{ form.as_p }}
                 <p class="buttons">
                     <input type="submit" name="submit" value="" class="btn" />
