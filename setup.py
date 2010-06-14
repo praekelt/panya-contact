@@ -1,15 +1,27 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='django-contact',
-    version='dev',
-    description='Django site contact app.',
-    author='Praekelt Consulting',
+    name='panya-contact',
+    version='0.0.1',
+    description='Panya contact form app.',
+    long_description = open('README.rst', 'r').read(),
+    author='Praekelt International',
     author_email='dev@praekelt.com',
-    url='https://github.com/praekelt/django-contact',
+    license='BSD',
+    url='http://github.com/praekelt/panya-contact',
     packages = find_packages(),
     install_requires = [
         'django-honeypot',
+        'panya',
     ],
     include_package_data=True,
+    classifiers = [
+        "Programming Language :: Python",
+        "License :: OSI Approved :: BSD License",
+        "Development Status :: 4 - Beta",
+        "Operating System :: OS Independent",
+        "Framework :: Panya",
+        "Intended Audience :: Developers",
+        "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    ],
 )
