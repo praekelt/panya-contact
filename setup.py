@@ -10,6 +10,9 @@ setup(
     license='BSD',
     url='http://github.com/praekelt/panya-contact',
     packages = find_packages(),
+    dependency_links = [
+        'https://github.com/praekelt/panya/tarball/master#egg=panya',
+    ],
     install_requires = [
         'django-honeypot',
         'panya',
