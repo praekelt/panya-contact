@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-from contact.models import ContactOptions
+from contact.models import ContactPreferences
 
-
-admin.site.register(ContactOptions)
+admin.site.register(ContactPreferences)

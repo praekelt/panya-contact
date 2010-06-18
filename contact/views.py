@@ -4,7 +4,7 @@ from django.template import RequestContext
 
 #from pagemenu.pagemenus import DateFieldIntervalPageMenu
 from contact.forms import ContactForm
-from contact.models import ContactOptions
+from contact.models import ContactPreferences
 
 class GenericContactPage(object):
     '''
@@ -18,7 +18,7 @@ class GenericContactPage(object):
         return 'contact/contact-us.html'
     
     def get_object(self):
-        return ContactOptions.objects.latest('id')
+        return ContactPreferences.objects.latest('id')
     
     def get_recipients(self, obj):
         obj = self.get_object()
@@ -65,3 +65,4 @@ class GenericContactPage(object):
         return render_to_response(template_name, context)
 
 generic_contact_page = GenericContactPage()
+
