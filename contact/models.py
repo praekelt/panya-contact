@@ -1,10 +1,10 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-from options.models import Options
+from preferences.models import Preferences
         
-class ContactOptions(Options):
-    __module__ = 'options.models'
+class ContactPreferences(Preferences):
+    __module__ = 'preferences.models'
     
     telephone = models.CharField(
         max_length=24,
@@ -40,7 +40,6 @@ class ContactOptions(Options):
         help_text='Select users who will recieve emails sent via the general contact form.'
     )
     
-    
     class Meta:
-        verbose_name = 'Contact options'
-        verbose_name_plural = 'Contact options'
+        verbose_name = 'Contact preferences'
+        verbose_name_plural = 'Contact preferences'
