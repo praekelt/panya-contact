@@ -15,6 +15,7 @@ setup(
     ],
     install_requires = [
         'django-honeypot',
+        'django-preferences',
         'panya',
     ],
     include_package_data=True,
