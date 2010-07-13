@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='panya-contact',
-    version='0.0.2',
+    version='0.0.3',
     description='Panya contact form app.',
     long_description = open('README.rst', 'r').read(),
     author='Praekelt International',
@@ -28,4 +28,5 @@ setup(
         "Intended Audience :: Developers",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
+    zip_safe=False,
 )
