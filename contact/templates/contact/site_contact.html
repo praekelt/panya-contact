@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="page section_user">
+	    <div class="title">
+		    <h1>Contact Us</h1>
+		</div>
+		<div class="generic">
+            <h2>{% if messages %}{{ messages|join:" "}}{% else %}Please use the form below to send us a message.{% endif %}</h2>
+            <form id="frmStationContact" method="post" class="cmxform">
+				{% csrf_token %}
+                {{ form.as_p }}
+                <p class="buttons">
+                    <input type="submit" name="submit" value="" class="btn" />
+                </p>
+            </form>
+        </div>
+	</div>
+{% endblock %}
