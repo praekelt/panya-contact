@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='panya-contact',
-    version='0.0.3',
+    version='0.0.4',
     description='Panya contact form app.',
     long_description = open('README.rst', 'r').read(),
     author='Praekelt International',
@@ -14,7 +14,6 @@ setup(
         'https://github.com/praekelt/panya/tarball/master#egg=panya',
     ],
     install_requires = [
-        'django-honeypot',
         'django-preferences',
         'panya',
     ],
