@@ -23,7 +23,7 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Development Status :: 4 - Beta",
         "Operating System :: OS Independent",
-        "Framework :: Panya",
+        "Framework :: Django",
         "Intended Audience :: Developers",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
