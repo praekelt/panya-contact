@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='panya-contact',
-    version='0.0.4',
+    version='0.0.5',
     description='Panya contact form app.',
     long_description = open('README.rst', 'r').read(),
     author='Praekelt International',
