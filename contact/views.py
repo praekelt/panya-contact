@@ -5,7 +5,7 @@ class SiteContact(GenericForm):
     def get_form_class(self, *args, **kwargs):
         return SiteContactForm
     
-    def get_template_name(self):
+    def get_template_name(self, *args, **kwargs):
         return 'contact/site_contact.html'
     
     def get_success_message(self, *args, **kwargs):
